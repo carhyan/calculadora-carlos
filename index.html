@@ -13,28 +13,34 @@
                 <input type="text" id="result" disabled>
             </div>
             <div class="buttons">
-                <button onclick="appendNumber('7')">7</button>
-                <button onclick="appendNumber('8')">8</button>
-                <button onclick="appendNumber('9')">9</button>
-                <button onclick="operate('+')">+</button>
-
-                <button onclick="appendNumber('4')">4</button>
-                <button onclick="appendNumber('5')">5</button>
-                <button onclick="appendNumber('6')">6</button>
-                <button onclick="operate('-')">-</button>
-
-                <button onclick="appendNumber('1')">1</button>
-                <button onclick="appendNumber('2')">2</button>
-                <button onclick="appendNumber('3')">3</button>
-                <button onclick="operate('*')">*</button>
-
-                <button onclick="appendNumber('0')">0</button>
-                <button onclick="clearScreen()">C</button>
-                <button onclick="calculate()">=</button>
-                <button onclick="operate('/')">/</button>
-
-                <button onclick="calculatePower()">x²</button>
-                <button onclick="calculateSquareRoot()">√x</button>
+                <div class="row">
+                    <button onclick="appendNumber('7')">7</button>
+                    <button onclick="appendNumber('8')">8</button>
+                    <button onclick="appendNumber('9')">9</button>
+                    <button onclick="operate('+')">+</button>
+                </div>
+                <div class="row">
+                    <button onclick="appendNumber('4')">4</button>
+                    <button onclick="appendNumber('5')">5</button>
+                    <button onclick="appendNumber('6')">6</button>
+                    <button onclick="operate('-')">-</button>
+                </div>
+                <div class="row">
+                    <button onclick="appendNumber('1')">1</button>
+                    <button onclick="appendNumber('2')">2</button>
+                    <button onclick="appendNumber('3')">3</button>
+                    <button onclick="operate('*')">*</button>
+                </div>
+                <div class="row">
+                    <button class="zero" onclick="appendNumber('0')">0</button>
+                    <button onclick="clearScreen()">C</button>
+                    <button onclick="calculate()">=</button>
+                    <button onclick="operate('/')">/</button>
+                </div>
+                <div class="row">
+                    <button onclick="calculatePower()">x²</button>
+                    <button onclick="calculateSquareRoot()">√x</button>
+                </div>
             </div>
         </div>
 

@@ -22,10 +22,10 @@ body {
 }
 
 .display input {
-    width: 200px;
-    height: 40px;
+    width: 230px;
+    height: 50px;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 24px;
     text-align: right;
     border: none;
     padding: 5px;
@@ -33,10 +33,21 @@ body {
     border-radius: 5px;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
 .buttons button {
     width: 50px;
     height: 50px;
-    margin: 5px;
     font-size: 20px;
     background-color: #004c8c;
     border: none;
@@ -50,6 +61,10 @@ body {
 
 .buttons button:active {
     background-color: #003366;
+}
+
+.zero {
+    width: calc(50px * 3 + 20px * 2); /* Ocupa 3 colunas + o espaçamento entre os botões */
 }
 
 .history {
@@ -77,12 +92,21 @@ body {
 
 @media (max-width: 600px) {
     .buttons button {
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         font-size: 18px;
     }
 
     .display input {
-        width: 160px;
+        width: 200px;
+    }
+
+    .row {
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .zero {
+        width: calc(45px * 3 + 10px * 2); /* Ajuste para dispositivos menores */
     }
 }
